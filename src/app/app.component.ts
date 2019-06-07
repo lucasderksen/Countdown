@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
       .subscribe(x => {
         console.log("count: ", this.count);
         console.log("amount: ", this.amount);
-        if (this.count < 292) {
+        if (this.count < 2087) {
           this.count = 0;
           this.countDown.unsubscribe();
         }
