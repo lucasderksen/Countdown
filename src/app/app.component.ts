@@ -37,8 +37,8 @@ export class AppComponent implements OnInit {
 
     this.sub = Observable.interval(500)
       .subscribe(x => {
-        console.log(this.count);
-        console.log(this.amount);
+        console.log("count: ", this.count);
+        console.log("amount: ", this.amount);
         if (this.count < 1) {
           this.countDown.unsubscribe();
         }
