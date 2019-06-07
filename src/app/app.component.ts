@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
       .subscribe(x => {
         console.log(this.count);
         console.log(this.amount);
-        if (this.count < 0) {
+        if (this.count < 1) {
           this.countDown.unsubscribe();
         }
       });
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
       .subscribe(x => {
         console.log(this.count2);
         console.log(this.amount2);
-        if (this.count2 < 0) {
+        if (this.count2 < 1) {
           this.countDown2.unsubscribe();
         }
       });
